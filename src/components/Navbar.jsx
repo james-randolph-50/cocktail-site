@@ -1,16 +1,20 @@
-import navLinks from '../../constants'
+import navLinks from '../../constants/index'
+
 
 const Navbar = () => {
+
+    const bearLogo = "./bear.svg"
   return (
-    <nav>
-    <div>
+    <nav className='py-4 px-10'>
+    <div className='flex justify-between items-center'>
         <a href="#home" className='flex items-center justify-between'>
-            <div>
+            <div className='flex items-center gap-2'>
+                <img className='w-10 h-10' src={bearLogo} alt="El Osito Logo" />
                 <p>El Osito</p>
             </div>
         </a>
 
-        <ul>
+        <ul className='flex items-center gap-4'>
            {navLinks.map((item) => (
             <li key={item.id}>
                 <a href={`#${item.id}`}>{item.title}</a>
