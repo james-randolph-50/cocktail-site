@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@utility
+  .util-font-color-1 {
+    color: #d06224;
+  }
+  .util-font-color-2 {
+    color: #ae431e;
+  }
+  .util-font-color-3 {
+    color: #8A8635;
+  }
+  .util-font-color-4 {
+    color: #EAC891;
+  }

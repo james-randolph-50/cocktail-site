@@ -1,25 +1,35 @@
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 import navLinks from '../../constants/index'
 
 
 
 const Navbar = () => {
+    const bearLogo = "./bear.svg"
 
     useGSAP(() => {
-        const navTween = () => {
+        const navTween = gsap.timeline({
             scrollTrigger: {
                 trigger: 'nav',
-                start: 'bottom top'
-            }
-        };
-        navTween.fromTo('nav', {backgroundColor: 'transparent'}, {backgroundColor: '#00000050', backgroundFilter: 'blur(10px)', duration: 0.5, ease: 'power2.inOut'});
+                start: 'bottom top',
+            },
         });
 
+        navTween.fromTo(
+            'nav',
+            { backgroundColor: 'transparent' },
+            {
+                backgroundColor: '#00000050',
+                backgroundFilter: 'blur(10px)',
+                duration: 0.5,
+                ease: 'power2.inOut',
+            },
+        );
+    });
 
 
-    const bearLogo = "./bear.svg"
   return (
-    <nav className=''>
+    <nav className='sticky top-0'>
     <div className='flex justify-between items-center'>
         <a href="#home" className='flex items-center justify-between'>
             <div className='flex items-center gap-2'>
