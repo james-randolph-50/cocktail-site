@@ -55,11 +55,12 @@ const Hero = () => {
   return (
     <>
     <section id="hero">
-        <h1 className='title text-4xl font-bold'>El Osito</h1>
+        <h1 className='title text-4xl font-bold color-primary-color'>El Osito</h1>
         <p className='subtitle' href="#menu">View our cocktails and mocktails</p>
-    </section>
 
-    <div className="w-full md:h[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover inset-0">
+        
+    </section>
+    <div className="w-full md:h[80%] md:object-contain h-1/2 absolute object-bottom object-cover inset-0">
     <video 
         ref={videoRef}
         src={heroVideo}
@@ -68,6 +69,7 @@ const Hero = () => {
         playsInline
     />
     </div>
+
     </>
   )
 }

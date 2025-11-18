@@ -1,10 +1,10 @@
-const navLinks = [
+export const navLinks = [
+      {title: 'Menu', id: "menu"},
     {title: 'About Us', id: "about"},
-    {title: 'Menu', id: "menu"},
     {title: 'Contact', id: "contact"}
 ]
 
-const cocktailLists = [
+export const cocktailLists = [
     {
        name: "cocktail #1",
        ingredients: "list here",
@@ -27,7 +27,7 @@ const cocktailLists = [
     },
    ];
    
-   const mockTailLists = [
+export const mockTailLists = [
     {
        name: "Mocktail #1",
        ingredients: "list here",
@@ -81,4 +81,11 @@ const hoursOfOperation = [
     },
    ];
 
-export default navLinks;
+export const constants = {
+  navLinks,
+  cocktailLists,
+  mockTailLists,
+  hoursOfOperation,
+};
+
+export default constants;
