@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
-<main>
+<main className='container mx-auto text-white'>
   
   <Navbar />
   <Hero />

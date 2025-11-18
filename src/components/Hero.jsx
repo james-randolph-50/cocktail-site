@@ -54,19 +54,18 @@ const Hero = () => {
 
   return (
     <>
-    <section id="hero">
-        <h1 className='title text-4xl font-bold color-primary-color'>El Osito</h1>
+    <section id="hero" className='flex flex-col items-center justify-center text-white'>
+        <h1 className='title text-4xl font-bold '>El Osito</h1>
         <p className='subtitle' href="#menu">View our cocktails and mocktails</p>
-
-        
     </section>
-    <div className="w-full md:h[80%] md:object-contain h-1/2 absolute object-bottom object-cover inset-0">
+    <div className="w-full">
     <video 
         ref={videoRef}
         src={heroVideo}
         muted
         preload="auto"
         playsInline
+        className="w-full aspect-video object-cover"
     />
     </div>
 
